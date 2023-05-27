@@ -1,0 +1,1 @@
+export type iconsType = 'Clearn Night' | 'Cloudny Night-1' | 'Cloudny Night' | 'Cloudy' | 'Dawn' | 'Dusk' | 'Full Moon' | 'Halfmoon' | 'Lightning' | 'Moon25' | 'Moon35' | 'Rain' | 'Rainbow' | 'Snowy' | 'Star' | 'Storm' | 'Sunny Rain' | 'Sunny with cloud-1' | 'Sunny with cloud' | 'Sunny' | 'Sunrise' | 'Sunset' | 'Thunder' | 'Typhoon' | 'Wind'

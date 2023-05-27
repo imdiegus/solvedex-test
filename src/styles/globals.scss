@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+$main-bg:#1E1E1E;
+
+body, html{
+  font-family: 'Poppins', sans-serif;
+  background-color: $main-bg;
+  margin: 0;
+  padding: 0;
+}
+
+p,h1, span{
+  color: #ffffff;
+}
+
+.mainTitle{
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 130px;
+}
+
+.icon{
+  width: 288px;
+}
+
+.mainContainer{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & button{
+    background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+    text-transform: capitalize;
+    font-weight: 300;
+  }
+
+  & p, span{
+    font-size: 25px;
+  }
+}
+
+.weatherContainer{
+  position: relative;
+  padding-top: 60px;
+
+  & .icon{
+    position:absolute;
+    right: 0;
+    top: 0;
+  }
+
+  & .cardBg{
+    width: 350px;
+    background-color: #24353E;
+    box-shadow: 10px 9px 70 24353E;
+    padding: 52px;
+    border-radius: 20px;
+    padding-top: 200px;
+
+    & .city{
+      font-weight: 700;
+    }
+
+    & .temperature{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+    }
+    & .degrees{
+      font-weight: 300;
+    }
+  }
+}
