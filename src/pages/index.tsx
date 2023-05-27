@@ -64,6 +64,7 @@ export default function Home({ cities }: Props) {
 					Solvedex Weather App
 				</h1>
 				<Select
+					classNamePrefix={'ReactSelect'}
 					placeholder='Search Here'
 					styles={{
 						control: (baseStyles) => ({
@@ -97,6 +98,7 @@ export default function Home({ cities }: Props) {
 					</div>
 				}
 				{(weather && !loading) && <WeatherCard
+					city={selected?.label ?? ''}
 					weather={weather}
 				/>}
 			</div>

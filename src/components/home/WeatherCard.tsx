@@ -7,9 +7,10 @@ import Icon from '../commonComponents/Icon'
 
 type Props = {
 	weather: weatherInterface
+	city: string
 }
 
-export default function HomePage({ weather }: Props) {
+export default function HomePage({ weather, city }: Props) {
 
 	const [temp, setTemp] = useState<{ temp: number, type: 'c' | 'f' }>({ type: 'f', temp: 0 })
 
@@ -68,8 +69,9 @@ export default function HomePage({ weather }: Props) {
 			<div className='cardBg'>
 				<div>
 					<div className='temperature'>
-						<p className='city'>{weather.name}</p>
+						<p className='city'>{city}</p>
 						<span
+							id='temperatureDegrees'
 							className='degrees'
 							onClick={handleChangeDegree}
 						>
