@@ -9,13 +9,10 @@ type Props = {
 export default function Icon({ icon }: Props) {
 
     return (
-        <Image
+        <img
             className='icon'
             src={`/icons/${icon}.png`}
             alt={icon}
-            height={288}
-            width={288}
-            quality={100}
         />
     )
 }
